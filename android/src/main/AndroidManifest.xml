@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.rivium.push.voip.flutter">
+    <!--
+        This is a thin Flutter wrapper around the native RiviumPush VoIP SDK.
+        All activities, receivers, and permissions are declared in the native SDK's AAR manifest.
+        They will be merged automatically during the build process.
+    -->
+</manifest>

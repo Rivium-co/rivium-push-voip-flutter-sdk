@@ -1,0 +1,20 @@
+# Dart/Flutter
+.dart_tool/
+.packages
+build/
+pubspec.lock
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
+
+# Local AAR builds
+android/libs/
