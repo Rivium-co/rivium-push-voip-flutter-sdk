@@ -18,3 +18,7 @@ Thumbs.db
 
 # Local AAR builds
 android/libs/
+
+# Gradle build caches
+.gradle/
+**/.gradle/

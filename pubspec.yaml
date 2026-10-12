@@ -1,6 +1,6 @@
 name: rivium_push_voip
 description: VoIP call handling add-on for RiviumPush push notifications. Shows native incoming call UI on Android (CallStyle) and iOS (CallKit).
-version: 0.1.0
+version: 0.1.1
 homepage: https://rivium.co/cloud/rivium-push
 repository: https://github.com/Rivium-co/rivium-push-voip-flutter-sdk
 

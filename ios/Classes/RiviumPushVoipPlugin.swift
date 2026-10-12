@@ -33,6 +33,11 @@ public class RiviumPushVoipPlugin: NSObject, FlutterPlugin {
     // Server URL
     private static let defaultServerUrl = "https://push-api.rivium.co"
 
+    /// SDK identity sent with the VoIP token registration.
+    /// Keep `sdkVersion` in sync with pubspec.yaml and rivium_push_voip.podspec.
+    static let sdkName = "flutter-voip"
+    static let sdkVersion = "0.1.1"
+
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "co.rivium.push/voip", binaryMessenger: registrar.messenger())
         let instance = RiviumPushVoipPlugin()
@@ -106,12 +111,15 @@ public class RiviumPushVoipPlugin: NSObject, FlutterPlugin {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue(apiKey, forHTTPHeaderField: "x-api-key")
+        request.setValue("\(RiviumPushVoipPlugin.sdkName)/\(RiviumPushVoipPlugin.sdkVersion)", forHTTPHeaderField: "X-Rivium-SDK")
 
         let body: [String: Any] = [
             "deviceId": deviceId,
             "platform": "ios",
             "pushToken": token,
             "appIdentifier": appIdentifier,
+            "sdkName": RiviumPushVoipPlugin.sdkName,
+            "sdkVersion": RiviumPushVoipPlugin.sdkVersion,
         ]
         request.httpBody = try? JSONSerialization.data(withJSONObject: body)
 
