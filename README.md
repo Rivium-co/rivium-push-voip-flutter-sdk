@@ -22,7 +22,7 @@ Add to your `pubspec.yaml`:
 ```yaml
 dependencies:
   rivium_push: ^0.1.0
-  rivium_push_voip: ^0.1.1
+  rivium_push_voip: ^0.1.2
 ```
 
 ## Usage

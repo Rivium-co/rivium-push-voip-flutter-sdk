@@ -52,5 +52,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"
 
     // Rivium Push VoIP SDK (Maven Central)
-    implementation 'co.rivium:rivium-push-voip:0.1.0'
+    implementation 'co.rivium:rivium-push-voip:0.1.1'
 }

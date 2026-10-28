@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.2] - 2026-10-29
+
+### Fixed
+- Android: `callIdKey` is now used to find the call ID in the push payload (Android VoIP SDK 0.1.1), and call payloads and caller names are no longer written to the device log.
+
 ## [0.1.1] - 2026-10-12
 
 ### Added
