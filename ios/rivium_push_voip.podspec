@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'rivium_push_voip'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'VoIP call handling add-on for RiviumPush push notifications.'
   s.description      = <<-DESC
 VoIP call handling add-on for RiviumPush push notifications.
@@ -11,7 +11,7 @@ Provides native incoming call UI using CallKit on iOS.
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Rivium' => 'support@rivium.co' }
   s.source           = { :path => '.' }
-  s.source_files     = 'Classes/**/*'
+  s.source_files     = 'rivium_push_voip/Sources/rivium_push_voip/**/*.swift'
   s.dependency 'Flutter'
   s.platform         = :ios, '13.0'
   s.swift_version    = '5.0'
